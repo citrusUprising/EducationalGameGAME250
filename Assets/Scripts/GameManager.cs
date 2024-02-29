@@ -46,6 +46,7 @@ public class GameManager : MonoBehaviour
         SuccessPanel.SetActive(false);
         transitionPanel.SetActive(false);
         Debug.Log(GameManager.Instance);
+        //set to correct images
     }
     public void ItemClicked(FoodSafetyClickable item)
     {
