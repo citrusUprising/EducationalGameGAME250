@@ -70,7 +70,8 @@ public class GameManager : MonoBehaviour
                 {
                     issuesFound++;
                     // Check if all issues have been found after processing the clicked item
-                    CheckForLevelCompletion();
+                    // commented out for playtest FLAG
+                    //CheckForLevelCompletion();
                 }
                 issuesFoundText.text = "Issues found: " + issuesFound;
             }
