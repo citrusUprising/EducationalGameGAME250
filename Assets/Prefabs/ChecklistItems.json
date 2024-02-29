@@ -8,8 +8,8 @@
           "content": "Separate storage for raw meat away from cooked food.",
           "safeDescription": "This tub in the fridge has raw meat in it.",
           "unsafeDescription": "This tub in the fridge has raw meat and vegetables together.",
-          "safeImage": "Images/Tub containing raw meat.png",
-          "unsafeImage": "Images/Tub containing raw meat and onions.png",
+          "safeImage": "Images/Tub containing raw meat",
+          "unsafeImage": "Images/Tub containing raw meat and onions",
           "score": 1,
           "position": [ 7, 3, 0 ]
         },
@@ -18,8 +18,8 @@
           "content": "Food maintained at safe temperatures: ≤41°F for cold foods",
           "safeDescription": "The temperature in the fridge is at 37° F.",
           "unsafeDescription": "The temperature in the fridge is at 42° F.",
-          "safeImage": "Images/Refrigerator Valve @ 37 F.png",
-          "unsafeImage": "Images/Refrigerator Valve @ 42 F.png",
+          "safeImage": "Images/Refrigerator Valve @ 37 F",
+          "unsafeImage": "Images/Refrigerator Valve @ 42 F",
           "score": 1,
           "position": [ 7, -1.5, 0 ]
         },
@@ -28,8 +28,8 @@
           "content": "Food maintained at safe temperatures: ≥135°F for hot foods",
           "safeDescription": "The hot plate is at 137° F.",
           "unsafeDescription": "The hot plate is at 131° F.",
-          "safeImage": "Images/Hot Plate @ 137 F.png",
-          "unsafeImage": "Images/Hot Plate @ 131 F.png",
+          "safeImage": "Images/Hot Plate @ 137 F",
+          "unsafeImage": "Images/Hot Plate @ 131 F",
           "score": 1,
           "position": [ -7, 0.75, 0 ]
         },
@@ -38,8 +38,8 @@
           "content": "Paper products and other service items are stored in a clean place until used. (utensils, plate, wrapper, to-go boxes…)",
           "safeDescription": "The service items are all in an organized container.",
           "unsafeDescription": "The service items are all strewn about on the counter.",
-          "safeImage": "Images/Service Items in organized container.png",
-          "unsafeImage": "Images/Service Items strewn on counter.png",
+          "safeImage": "Images/Service Items in organized container",
+          "unsafeImage": "Images/Service Items strewn on counter",
           "score": 1,
           "position": [ -7.2, -3, 0 ]
         },
@@ -48,8 +48,8 @@
           "content": "Cutting boards are smooth, easily cleanable and in good repair. Maplewood is the only wood approved for food contact",
           "safeDescription": "This cutting board is undamaged",
           "unsafeDescription": "This cutting board is rough and hard to clean.",
-          "safeImage": "Images/Cutting Board (Pristine).png",
-          "unsafeImage": "Images/Cutting Board (Damaged).png",
+          "safeImage": "Images/Cutting Board (Pristine)",
+          "unsafeImage": "Images/Cutting Board (Damaged)",
           "score": 1,
           "position": [ -4, 0, 0 ]
         }
@@ -63,8 +63,8 @@
           "content": "Truck has separate sink exclusively for hand-washing.",
           "safeDescription": "There is a sink specifically for hand-washing.",
           "unsafeDescription": "There is a small stove next to the sink.",
-          "safeImage": "Images/Handwashing Sink.png",
-          "unsafeImage": "Images/Small stove.png",
+          "safeImage": "Images/Handwashing Sink",
+          "unsafeImage": "Images/Small stove",
           "score": 1,
           "position": [ 0, 1, 0 ]
         }
@@ -78,8 +78,8 @@
           "content": "Clean wiping cloths and sanitizing buckets on hand.",
           "safeDescription": "A bucket of santizing solution. It has clean wiping cloths nearby.",
           "unsafeDescription": "...",
-          "safeImage": "Images/Sanitizing bucket.png",
-          "unsafeImage": "Images/transparent.png",
+          "safeImage": "Images/Sanitizing bucket",
+          "unsafeImage": "Images/transparent",
           "score": 1,
           "position": [ 3, -2, 0 ]
         },
@@ -88,8 +88,8 @@
           "content": "Cleaning products or products with toxic chemicals are kept in safe, designated area",
           "safeDescription": "Toxic cleaning products are safe away from the food.",
           "unsafeDescription": "...",
-          "safeImage": "Images/Cleaning Product container.png",
-          "unsafeImage": "Images/transparent.png",
+          "safeImage": "Images/Cleaning Product container",
+          "unsafeImage": "Images/transparent",
           "score": 1,
           "position": [ 0, -1, 0 ]
         }
@@ -103,8 +103,8 @@
           "content": "First-aid kit available.",
           "safeDescription": "This first-aid kit comes with all kinds of necessary tools and supplies.",
           "unsafeDescription": "...",
-          "safeImage": "Images/First aid kit.png",
-          "unsafeImage": "Images/transparent.png",
+          "safeImage": "Images/First aid kit",
+          "unsafeImage": "Images/transparent",
           "score": 1,
           "position": [ 2.5, 2.75, 0 ]
         },
@@ -113,8 +113,8 @@
           "content": "Wall-mounted, minimum 10 BC rated approved fire extinguisher accessible",
           "safeDescription": "This BC-rated fire extinguisher is wall-mounted.",
           "unsafeDescription": "...",
-          "safeImage": "Images/Fire Extinguisher.png",
-          "unsafeImage": "Images/transparent.png",
+          "safeImage": "Images/Fire Extinguisher",
+          "unsafeImage": "Images/transparent",
           "score": 1,
           "position": [ -2, 3, 0 ]
         }

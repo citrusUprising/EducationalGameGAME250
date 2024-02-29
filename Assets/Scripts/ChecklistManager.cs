@@ -11,6 +11,8 @@ public class ChecklistItem
     public string safeDescription;
     public string unsafeDescription;
     public int score;
+    public string safeImage;
+    public string unsafeImage;
     public int[] position;
 }
 
@@ -69,7 +71,8 @@ public class ChecklistManager : MonoBehaviour
         {
             //create a header for each section
             CreateSectionHeader(section.name);
-
+            // Debug.Log("Images");
+            // Debug.Log(Resources.LoadAll<GameObject>("Images"));
             foreach (var item in section.items)
             {
                 if (itemPrefabs.TryGetValue(item.name, out GameObject prefab))
@@ -90,13 +93,29 @@ public class ChecklistManager : MonoBehaviour
                         clickable.unsafeDescription = item.unsafeDescription;
                         clickable.scoreDelta = item.score * (clickable.isSafe ? 1 : -1);
                         clickable.position = new Vector3(item.position[0], item.position[1], item.position[2]);
+                        // get the srpite render from the prefab
+                        SpriteRenderer spriteRenderer = prefab.GetComponent<SpriteRenderer>();
+                        // change the sprite to item.safeImage if the item is safe, item.unsafeImage otherwise
+                        if (clickable.isSafe)
+                        {
+                            Debug.Log(item.safeImage);
+                            Debug.Log(Resources.Load<GameObject>(item.safeImage));
+                            spriteRenderer.sprite = Resources.Load<GameObject>(item.safeImage).GetComponent<SpriteRenderer>().sprite;
+                            
+                        }
+                        else
+                        {
+                            Debug.Log(item.unsafeImage);
+                            Debug.Log(Resources.Load<GameObject>(item.unsafeImage));
+                            spriteRenderer.sprite = Resources.Load<GameObject>(item.unsafeImage).GetComponent<SpriteRenderer>().sprite;
+                        }
                         GameObject gameItem = Instantiate(prefab, clickable.position, Quaternion.identity, itemsParent);
-                        Debug.Log($"Setting {item.name} description to {item.safeDescription}");
+                        // Debug.Log($"Setting {item.name} description to {item.safeDescription}");
                     }
                 }
                 else
                 {
-                    Debug.LogWarning($"Prefab for {item.name} not found.");
+                    // Debug.LogWarning($"Prefab for {item.name} not found.");
                 }
             }
         }
