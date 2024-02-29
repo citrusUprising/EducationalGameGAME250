@@ -22,7 +22,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private TMP_Text levelText;
     [SerializeField] private TMP_Text scoreText;
     [SerializeField] private TMP_Text feedbackText;
-    [SerializeField] private TMP_Text isIssueText;
+    [SerializeField] private TMP_Text safetyDescription;
     [SerializeField] private TMP_Text issuesFoundText;
 
     private int score = 0, issuesFound = 0, currentSettingIndex = 0;
@@ -45,18 +45,19 @@ public class GameManager : MonoBehaviour
         feedbackPanel.SetActive(false);
         SuccessPanel.SetActive(false);
         transitionPanel.SetActive(false);
+        Debug.Log(GameManager.Instance);
     }
     public void ItemClicked(FoodSafetyClickable item)
     {
         if (!LevelCompleted)
         {
-            if (feedbackPanel == null || levelText == null || scoreText == null || feedbackText == null || isIssueText == null || issuesFoundText == null)
+            if (feedbackPanel == null || levelText == null || scoreText == null || feedbackText == null || safetyDescription == null || issuesFoundText == null)
             {
                 Debug.LogWarning("Some UI elements are missing");
             }
             // Show item description regardless of its counted state
-            feedbackText.text = item.itemDescription;
-            isIssueText.text = item.isIssue ? "You found an issue!" : "This is not an issue.";
+            feedbackText.text = item.itemName;
+            safetyDescription.text = item.isSafe ? item.safeDescription : item.unsafeDescription;
 
             if (!item.HasBeenCounted())
             {
@@ -64,7 +65,7 @@ public class GameManager : MonoBehaviour
                 score += item.scoreDelta;
                 scoreText.text = "Score: " + score.ToString();
 
-                if (item.isIssue)
+                if (item.isSafe)
                 {
                     issuesFound++;
                     // Check if all issues have been found after processing the clicked item

@@ -1,0 +1,78 @@
+{
+    "sections": [
+        {
+            "name": "Licenses and Documentation",
+            "items": [
+                {
+                    "name": "FScert",
+                    "content": "Valid food safety certification of the employee in charge.",
+                    "safeDescription":"something safe",
+                    "unsafeDescription":"something unsafe",
+                    "score": 1,
+                    "position": [0, 1, 0]
+                },
+                {
+                    "name": "license",
+                    "content": "Original licenses and permits present and displayed.",
+                    "safeDescription":"something safe",
+                    "unsafeDescription":"something unsafe",
+                    "score": 1,
+                    "position": [1,0,0]
+                },
+                {
+                    "name": "RoA",
+                    "content": "Proper record of activities, including ingredients, cleaning schedules, and daily checklists.",
+                    "safeDescription":"something safe",
+                    "unsafeDescription":"something unsafe",
+                    "score": 1,
+                    "position": [0,0,0]
+                }
+            ]
+        },
+        {
+            "name": "Employee Health, Behavior and Hygiene",
+            "items": [
+                {
+                    "name": "handwashing",
+                    "content": "Employees practice proper handwashing.",
+                    "safeDescription":"something safe",
+                    "unsafeDescription":"something unsafe",
+                    "score": 1,
+                    "position": [1,1,0]
+                },
+                {
+                    "name": "wellGroomed",
+                    "content": "Employees healthy, well-groomed, and wearing appropriate garments or protective wear.",
+                    "safeDescription":"something safe",
+                    "unsafeDescription":"something unsafe",
+                    "score": 1,
+                    "position": [1,2,0]
+                },
+                {
+                    "name": "personalItems",
+                    "content": "Employee personal items kept away from food preparation areas.",
+                    "safeDescription":"something safe",
+                    "unsafeDescription":"something unsafe",
+                    "score": 1,
+                    "position": [2,1,0]
+                },
+                {
+                    "name": "thermometers",
+                    "content": "Cooks use thermometers to ensure meat is properly cooked.",
+                    "safeDescription":"something safe",
+                    "unsafeDescription":"something unsafe",
+                    "score": 1,
+                    "position": [2,3,0]
+                },
+                {
+                    "name": "cutsSoresRashes",
+                    "content": "Employees with cuts, sores, or rashes on their hands are removed from duty or are wearing gloves.",
+                    "safeDescription":"something safe",
+                    "unsafeDescription":"something unsafe",
+                    "score": 1,
+                    "position": [2,2,0]
+                }
+            ]
+        }
+    ]
+}
