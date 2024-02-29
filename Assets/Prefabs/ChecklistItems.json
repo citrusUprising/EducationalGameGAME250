@@ -1,78 +1,104 @@
 {
-    "sections": [
+  "sections": [
+    {
+      "name": "Food Safety and Storage",
+      "items": [
         {
-            "name": "Licenses and Documentation",
-            "items": [
-                {
-                    "name": "FScert",
-                    "content": "Valid food safety certification of the employee in charge.",
-                    "safeDescription":"something safe",
-                    "unsafeDescription":"something unsafe",
-                    "score": 1,
-                    "position": [0, 1, 0]
-                },
-                {
-                    "name": "license",
-                    "content": "Original licenses and permits present and displayed.",
-                    "safeDescription":"something safe",
-                    "unsafeDescription":"something unsafe",
-                    "score": 1,
-                    "position": [1,0,0]
-                },
-                {
-                    "name": "RoA",
-                    "content": "Proper record of activities, including ingredients, cleaning schedules, and daily checklists.",
-                    "safeDescription":"something safe",
-                    "unsafeDescription":"something unsafe",
-                    "score": 1,
-                    "position": [0,0,0]
-                }
-            ]
+          "name": "meatStorage",
+          "content": "Separate storage for raw meat away from cooked food.",
+          "safeDescription": "This tub in the fridge has raw meat in it.",
+          "unsafeDescription": "This tub in the fridge has raw meat and vegetables together.",
+          "score": 1,
+          "position": [ 0, 0, 0 ]
         },
         {
-            "name": "Employee Health, Behavior and Hygiene",
-            "items": [
-                {
-                    "name": "handwashing",
-                    "content": "Employees practice proper handwashing.",
-                    "safeDescription":"something safe",
-                    "unsafeDescription":"something unsafe",
-                    "score": 1,
-                    "position": [1,1,0]
-                },
-                {
-                    "name": "wellGroomed",
-                    "content": "Employees healthy, well-groomed, and wearing appropriate garments or protective wear.",
-                    "safeDescription":"something safe",
-                    "unsafeDescription":"something unsafe",
-                    "score": 1,
-                    "position": [1,2,0]
-                },
-                {
-                    "name": "personalItems",
-                    "content": "Employee personal items kept away from food preparation areas.",
-                    "safeDescription":"something safe",
-                    "unsafeDescription":"something unsafe",
-                    "score": 1,
-                    "position": [2,1,0]
-                },
-                {
-                    "name": "thermometers",
-                    "content": "Cooks use thermometers to ensure meat is properly cooked.",
-                    "safeDescription":"something safe",
-                    "unsafeDescription":"something unsafe",
-                    "score": 1,
-                    "position": [2,3,0]
-                },
-                {
-                    "name": "cutsSoresRashes",
-                    "content": "Employees with cuts, sores, or rashes on their hands are removed from duty or are wearing gloves.",
-                    "safeDescription":"something safe",
-                    "unsafeDescription":"something unsafe",
-                    "score": 1,
-                    "position": [2,2,0]
-                }
-            ]
+          "name": "foodTempCold",
+          "content": "Food maintained at safe temperatures: ≤41°F for cold foods",
+          "safeDescription": "The temperature in the fridge is at 37° F.",
+          "unsafeDescription": "The temperature in the fridge is at 42° F.",
+          "score": 1,
+          "position": [ 0, 1, 0 ]
+        },
+        {
+          "name": "foodTempHot",
+          "content": "Food maintained at safe temperatures: ≥135°F for hot foods",
+          "safeDescription": "The hot plate is at 137° F.",
+          "unsafeDescription": "The hot plate is at 131° F.",
+          "score": 1,
+          "position": [ 0, 2, 0 ]
+        },
+        {
+          "name": "paperProducts",
+          "content": "Paper products and other service items are stored in a clean place until used. (utensils, plate, wrapper, to-go boxes…)",
+          "safeDescription": "The service items are all in an organized container.",
+          "unsafeDescription": "The service items are all strewn about on the counter.",
+          "score": 1,
+          "position": [ 0, 3, 0 ]
+        },
+        {
+          "name": "cuttingBoard",
+          "content": "Cutting boards are smooth, easily cleanable and in good repair. Maplewood is the only wood approved for food contact",
+          "safeDescription": "This cutting board is undamaged",
+          "unsafeDescription": "This cutting board is rough and hard to clean.",
+          "score": 1,
+          "position": [ 1, 0, 0 ]
         }
-    ]
+      ]
+    },
+    {
+      "name": "Equipment and Facilities",
+      "items": [
+        {
+          "name": "handWash",
+          "content": "Truck has separate sink exclusively for hand-washing.",
+          "safeDescription": "There is a sink specifically for hand-washing.",
+          "unsafeDescription": "There is a small stove next to the sink.",
+          "score": 1,
+          "position": [ 1, 1, 0 ]
+        }
+      ]
+    },
+    {
+      "name": "Sanitation and Maintanenance",
+      "items": [
+        {
+          "name": "bucket",
+          "content": "Clean wiping cloths and sanitizing buckets on hand.",
+          "safeDescription": "A bucket of santizing solution. It has clean wiping cloths nearby.",
+          "unsafeDescription": "...",
+          "score": 1,
+          "position": [ 1, 2, 0 ]
+        },
+        {
+          "name": "chemicals",
+          "content": "Cleaning products or products with toxic chemicals are kept in safe, designated area",
+          "safeDescription": "Toxic cleaning products are safe away from the food.",
+          "unsafeDescription": "...",
+          "score": 1,
+          "position": [ 1, 3, 0 ]
+        }
+      ]
+    },
+    {
+      "name": "Safety and Compliance",
+      "items": [
+        {
+          "name": "firstAid",
+          "content": "First-aid kit available.",
+          "safeDescription": "This first-aid kit comes with all kinds of necessary tools and supplies.",
+          "unsafeDescription": "...",
+          "score": 1,
+          "position": [ 2, 0, 0 ]
+        },
+        {
+          "name": "fireExtinguisher",
+          "content": "Wall-mounted, minimum 10 BC rated approved fire extinguisher accessible",
+          "safeDescription": "This BC-rated fire extinguisher is wall-mounted.",
+          "unsafeDescription": "...",
+          "score": 1,
+          "position": [ 2, 1, 0 ]
+        }
+      ]
+    }
+  ]
 }

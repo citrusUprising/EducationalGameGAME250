@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 4100053669056698997}
   - component: {fileID: 6599869773096841166}
   - component: {fileID: 5161944933071518178}
-  - component: {fileID: 1425978487389044121}
+  - component: {fileID: 6460968633114323270}
   m_Layer: 0
-  m_Name: FScert
+  m_Name: foodTempHot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -75,7 +75,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 986310495, guid: a03c2610221b14940b818fb271b448fa, type: 3}
+  m_Sprite: {fileID: -462256797, guid: a03c2610221b14940b818fb271b448fa, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -131,7 +131,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &1425978487389044121
+--- !u!114 &6460968633114323270
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -143,6 +143,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a9f933b8ac904961aed3d63ff21000a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemDescription: FScert
-  isIssue: 0
+  itemName: 
+  safeDescription: 
+  unsafeDescription: 
+  position: {x: 0, y: 0, z: 0}
+  isSafe: 0
   scoreDelta: 0
