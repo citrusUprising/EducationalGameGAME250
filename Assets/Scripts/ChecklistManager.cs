@@ -11,6 +11,8 @@ public class ChecklistItem
     public string safeDescription;
     public string unsafeDescription;
     public int score;
+    public string safeImage;
+    public string unsafeImage;
     public int[] position;
 }
 
@@ -69,7 +71,8 @@ public class ChecklistManager : MonoBehaviour
         {
             //create a header for each section
             CreateSectionHeader(section.name);
-
+            // Debug.Log("Images");
+            // Debug.Log(Resources.LoadAll<GameObject>("Images"));
             foreach (var item in section.items)
             {
                 if (itemPrefabs.TryGetValue(item.name, out GameObject prefab))
@@ -90,13 +93,37 @@ public class ChecklistManager : MonoBehaviour
                         clickable.unsafeDescription = item.unsafeDescription;
                         clickable.scoreDelta = item.score * (clickable.isSafe ? 1 : -1);
                         clickable.position = new Vector3(item.position[0], item.position[1], item.position[2]);
+                        // get the srpite render from the prefab
+                        SpriteRenderer spriteRenderer = prefab.GetComponent<SpriteRenderer>();
+                        // change the sprite to item.safeImage if the item is safe, item.unsafeImage otherwise
+                        if (clickable.isSafe)
+                        {
+                            spriteRenderer.sprite = Resources.Load<GameObject>(item.safeImage).GetComponent<SpriteRenderer>().sprite;
+                        }
+                        else
+                        {
+                            spriteRenderer.sprite = Resources.Load<GameObject>(item.unsafeImage).GetComponent<SpriteRenderer>().sprite;
+                        }
+                        float width = 1;
+                        float height = 1;
+                        // get width and height of the sprite
+                        try{
+                            width = spriteRenderer.sprite.bounds.size.x;
+                            height = spriteRenderer.sprite.bounds.size.y;
+
+                        }catch(Exception e){
+                            Debug.Log("Error getting sprite bounds for " + item.name + "isSafe: "+ clickable.isSafe);
+                            Debug.Log(e);
+                        }
+                        // set the scale of the collider's size to the sprite's size
+                        BoxCollider2D collider = prefab.GetComponent<BoxCollider2D>();
+                        collider.size = new Vector2(width, height);
                         GameObject gameItem = Instantiate(prefab, clickable.position, Quaternion.identity, itemsParent);
-                        Debug.Log($"Setting {item.name} description to {item.safeDescription}");
                     }
                 }
                 else
                 {
-                    Debug.LogWarning($"Prefab for {item.name} not found.");
+                    // Debug.LogWarning($"Prefab for {item.name} not found.");
                 }
             }
         }

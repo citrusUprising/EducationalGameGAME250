@@ -20,6 +20,11 @@ public class FoodSafetyClickable : MonoBehaviour
         if (string.IsNullOrEmpty(itemName))
         {
             itemName = gameObject.name;
+            if(isSafe){
+                //this.GetComponent<SpriteRenderer>().sprite = ;
+            }else{
+                //this.GetComponent<SpriteRenderer>().sprite = ;
+            }
         }
     }
 
