@@ -13,7 +13,7 @@ public class ChecklistItem
     public int score;
     public string safeImage;
     public string unsafeImage;
-    public int[] position;
+    public float[] position;
 }
 
 

@@ -11,17 +11,17 @@
           "safeImage": "Images/Tub containing raw meat",
           "unsafeImage": "Images/Tub containing raw meat and onions",
           "score": 1,
-          "position": [ 1, -3, -1 ]
+          "position": [ -5.8, -1.55, -1 ]
         },
         {
           "name": "foodTempCold",
           "content": "Food maintained at safe temperatures: ≤41°F for cold foods",
           "safeDescription": "The temperature in the fridge is at 37° F.",
           "unsafeDescription": "The temperature in the fridge is at 42° F.",
-          "safeImage": "Images/Refrigerator Valve @ 37 F",
-          "unsafeImage": "Images/Refrigerator Valve @ 42 F",
+          "safeImage": "Images/Fridge tem",
+          "unsafeImage": "Images/Fridge tem @ 42",
           "score": 1,
-          "position": [ 1, -1.5, 0 ]
+          "position": [ -6, 2, 0 ]
         },
         {
           "name": "foodTempHot",
@@ -131,10 +131,10 @@
         {
           "name": "fireExtinguisher",
           "content": "Wall-mounted, minimum 10 BC rated approved fire extinguisher accessible",
-          "safeDescription": "This BC-rated fire extinguisher is wall-mounted.",
-          "unsafeDescription": "...",
+          "safeDescription": "This BC 15-rated fire extinguisher is wall-mounted.",
+          "unsafeDescription": "This A 4.2-rated fire extinguisher is wall-mounted.",
           "safeImage": "Images/Fire Extinguisher",
-          "unsafeImage": "Images/transparent",
+          "unsafeImage": "Images/Fire Extinguisher",
           "score": 1,
           "position": [ -11, 3.5, 0 ]
         }
