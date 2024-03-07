@@ -48,8 +48,8 @@
           "content": "Food maintained at safe temperatures: ≤41°F for cold foods",
           "safeDescription": "The temperature in the fridge is at 37° F.",
           "unsafeDescription": "The temperature in the fridge is at 42° F.",
-          "safeImage": "Images/Fridge tem",
-          "unsafeImage": "Images/Fridge tem @ 42",
+          "safeImage": "Images/FridgeTem",
+          "unsafeImage": "Images/FridgeTem42",
           "score": 1,
           "position": [ -6, 2, 0 ]
         }
