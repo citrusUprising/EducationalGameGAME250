@@ -146,6 +146,6 @@ MonoBehaviour:
   itemName: paperTowel
   safeDescription: There is a paper towel dispenser
   unsafeDescription: ...
-  position: {x: 29, y: 1, z: 1}
+  position: {x: 27, y: 1.5, z: 1}
   isSafe: 0
   scoreDelta: -1

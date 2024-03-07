@@ -66,7 +66,7 @@
           "safeImage": "Images/Handwashing Sink",
           "unsafeImage": "Images/Small stove",
           "score": 1,
-          "position": [ 29, -0.2, 0 ]
+          "position": [ 29, 0.2, 0 ]
         },
         {
           "name": "paperTowel",
@@ -79,14 +79,14 @@
           "position": [ 27, 1.5, 1 ]
         },
         {
-          "name": "dishWash",
+           "name": "dishWash",
            "content": "Three-Compartment sink with adequate pressured supply of hot (minimum 120º) and cold water.",
            "safeDescription": "Truck has a three-compartment sink specifically for dishwashing, there is a reasonable amount of space for someone to work at it. Water pressure is adequate, hot water temp is 120º.",
-           "unsafeDescription": "Truck has a dishwashing sink, but when the handle is turned lukewarm water comes out sporadically with little pressure",
+           "unsafeDescription": "Truck has a dishwashing sink, but when the handle is turned lukewarm water comes out sporadically with little pressure.",
            "safeImage": "Images/Kitchen sink (on)",
            "unsafeImage": "Images/Kitchen sink",
            "score": 1,
-           "postion": [26, 1, 0]
+           "position": [ 25.2, 0.9, 0 ]
          }
       ]
     },

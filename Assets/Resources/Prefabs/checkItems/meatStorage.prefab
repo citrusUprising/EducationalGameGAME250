@@ -146,6 +146,6 @@ MonoBehaviour:
   itemName: meatStorage
   safeDescription: This tub in the fridge has raw meat in it.
   unsafeDescription: This tub in the fridge has raw meat and vegetables together.
-  position: {x: -6, y: -2, z: -1}
+  position: {x: -5.8, y: -1.55, z: -1}
   isSafe: 0
   scoreDelta: -1

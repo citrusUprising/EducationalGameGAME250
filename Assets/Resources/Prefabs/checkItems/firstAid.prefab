@@ -147,6 +147,6 @@ MonoBehaviour:
   safeDescription: This first-aid kit comes with all kinds of necessary tools and
     supplies.
   unsafeDescription: ...
-  position: {x: -2, y: 4, z: 0}
+  position: {x: 25, y: 3.2, z: 0}
   isSafe: 0
   scoreDelta: -1
