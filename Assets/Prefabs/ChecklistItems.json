@@ -77,6 +77,16 @@
           "unsafeImage": "Images/transparent",
           "score": 1,
           "position": [ 29, 1.5, 1 ]
+        },
+        {
+          "name": "tripleSink",
+          "content": "Water of adequate pressure available at unobstructed and accessible 3-compartment sink.",
+          "safeDescription": "There is a sink with three basins. The water comes out at a regular flow",
+          "unsafeDescription": "There is a sink with three basins. The water comes out sporadically with little pressure",
+          "safeImage": "Images/Kitchen sink (on)",
+          "unsafeImage": "Images/Kitchen sink",
+          "score": 1,
+          "position": [ 27, 0.95, 1 ]
         }
       ]
     },
