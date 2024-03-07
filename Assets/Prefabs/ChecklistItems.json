@@ -66,7 +66,7 @@
           "safeImage": "Images/Handwashing Sink",
           "unsafeImage": "Images/Small stove",
           "score": 1,
-          "position": [ -3, 0, 0 ]
+          "position": [ 29, -0.2, 0 ]
         },
         {
           "name": "paperTowel",
@@ -76,7 +76,7 @@
           "safeImage": "Images/Paper towel dispenser",
           "unsafeImage": "Images/transparent",
           "score": 1,
-          "position": [ 29, 1.5, 1 ]
+          "position": [ 27, 1.5, 1 ]
         },
         {
           "name": "dishWash",
@@ -86,7 +86,7 @@
            "safeImage": "Images/Kitchen sink (on)",
            "unsafeImage": "Images/Kitchen sink",
            "score": 1,
-           "postion": [ -5.5, 0, 0]
+           "postion": [26, 1, 0]
          }
       ]
     },
@@ -101,7 +101,7 @@
           "safeImage": "Images/Sanitizing bucket",
           "unsafeImage": "Images/transparent",
           "score": 1,
-          "position": [ -10.5, -3, 0 ]
+          "position": [ 27.5, -2.6, 0 ]
         },
         {
           "name": "chemicals",
@@ -111,7 +111,7 @@
           "safeImage": "Images/Cleaning Product container",
           "unsafeImage": "Images/transparent",
           "score": 1,
-          "position": [ 6, -3, 0 ]
+          "position": [ -2.3, -2.4, 0 ]
         }
       ]
     },
@@ -126,7 +126,7 @@
           "safeImage": "Images/First aid kit",
           "unsafeImage": "Images/transparent",
           "score": 1,
-          "position": [ -2.5, 4.25, 0 ]
+          "position": [ 25, 3.2, 0 ]
         },
         {
           "name": "fireExtinguisher",
@@ -136,7 +136,7 @@
           "safeImage": "Images/Fire Extinguisher",
           "unsafeImage": "Images/Fire Extinguisher",
           "score": 1,
-          "position": [ -11, 3.5, 0 ]
+          "position": [ 16.2, 2.6, 0 ]
         }
       ]
     }

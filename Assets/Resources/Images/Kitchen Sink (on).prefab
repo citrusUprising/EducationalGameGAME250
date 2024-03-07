@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5980495480429379847}
   - component: {fileID: -884674928946527743}
   m_Layer: 0
-  m_Name: Kitchen Sink (on)
+  m_Name: Kitchen sink (on)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
