@@ -129,7 +129,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 6, y: 6}
   m_EdgeRadius: 0
 --- !u!114 &6460968633114323270
 MonoBehaviour:
@@ -146,6 +146,6 @@ MonoBehaviour:
   itemName: foodTempHot
   safeDescription: "The hot plate is at 137\xB0 F."
   unsafeDescription: "The hot plate is at 131\xB0 F."
-  position: {x: -7, y: 0, z: 0}
+  position: {x: 10, y: 0, z: 0}
   isSafe: 0
   scoreDelta: -1

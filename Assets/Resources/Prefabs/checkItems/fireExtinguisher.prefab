@@ -134,7 +134,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 3.68, y: 5.28}
   m_EdgeRadius: 0
 --- !u!114 &3586010336650446459
 MonoBehaviour:
@@ -151,7 +151,7 @@ MonoBehaviour:
   itemName: fireExtinguisher
   safeDescription: This BC-rated fire extinguisher is wall-mounted.
   unsafeDescription: ...
-  position: {x: 2, y: 1, z: 0}
+  position: {x: -11, y: 3, z: 0}
   isSafe: 1
   scoreDelta: 1
 --- !u!222 &8914620682176241154

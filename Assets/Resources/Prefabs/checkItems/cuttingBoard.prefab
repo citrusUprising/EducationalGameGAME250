@@ -129,7 +129,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 6, y: 6}
   m_EdgeRadius: 0
 --- !u!114 &6593534057890006784
 MonoBehaviour:
@@ -146,6 +146,6 @@ MonoBehaviour:
   itemName: cuttingBoard
   safeDescription: This cutting board is undamaged
   unsafeDescription: This cutting board is rough and hard to clean.
-  position: {x: -4, y: 0, z: 0}
+  position: {x: -10, y: 0, z: 0}
   isSafe: 0
   scoreDelta: -1

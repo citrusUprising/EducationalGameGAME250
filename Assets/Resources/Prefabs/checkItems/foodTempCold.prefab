@@ -129,7 +129,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3, y: 3}
+  m_Size: {x: 6, y: 6}
   m_EdgeRadius: 0
 --- !u!114 &1425978487389044121
 MonoBehaviour:
@@ -146,6 +146,6 @@ MonoBehaviour:
   itemName: foodTempCold
   safeDescription: "The temperature in the fridge is at 37\xB0 F."
   unsafeDescription: "The temperature in the fridge is at 42\xB0 F."
-  position: {x: 7, y: -1, z: 0}
+  position: {x: 1, y: -1, z: 0}
   isSafe: 1
   scoreDelta: 1
