@@ -14,16 +14,6 @@
           "position": [ -5.8, -1.55, -1 ]
         },
         {
-          "name": "foodTempCold",
-          "content": "Food maintained at safe temperatures: ≤41°F for cold foods",
-          "safeDescription": "The temperature in the fridge is at 37° F.",
-          "unsafeDescription": "The temperature in the fridge is at 42° F.",
-          "safeImage": "Images/Fridge tem",
-          "unsafeImage": "Images/Fridge tem @ 42",
-          "score": 1,
-          "position": [ -6, 2, 0 ]
-        },
-        {
           "name": "foodTempHot",
           "content": "Food maintained at safe temperatures: ≥135°F for hot foods",
           "safeDescription": "The hot plate is at 137° F.",
@@ -31,7 +21,7 @@
           "safeImage": "Images/Hot Plate @ 137 F",
           "unsafeImage": "Images/Hot Plate @ 131 F",
           "score": 1,
-          "position": [ 10, 0.25, 0 ]
+          "position": [ 5, 0.8, 0 ]
         },
         {
           "name": "paperProducts",
@@ -41,17 +31,27 @@
           "safeImage": "Images/Service Items in organized container",
           "unsafeImage": "Images/Service Items strewn on counter",
           "score": 1,
-          "position": [ 9.5, -3, 0 ]
+          "position": [ 1.4, -2.4, 0 ]
         },
         {
           "name": "cuttingBoard",
-          "content": "Cutting boards are smooth, easily cleanable and in good repair. Maplewood is the only wood approved for food contact",
+          "content": "Cutting boards are smooth, easily cleanable and in good repair.",
           "safeDescription": "This cutting board is undamaged",
           "unsafeDescription": "This cutting board is rough and hard to clean.",
           "safeImage": "Images/Cutting Board (Pristine)",
           "unsafeImage": "Images/Cutting Board (Damaged)",
           "score": 1,
-          "position": [ -10, 0, 0 ]
+          "position": [ 15.5, 0.6, 0 ]
+        },
+        {
+          "name": "foodTempCold",
+          "content": "Food maintained at safe temperatures: ≤41°F for cold foods",
+          "safeDescription": "The temperature in the fridge is at 37° F.",
+          "unsafeDescription": "The temperature in the fridge is at 42° F.",
+          "safeImage": "Images/Fridge tem",
+          "unsafeImage": "Images/Fridge tem @ 42",
+          "score": 1,
+          "position": [ -6, 2, 0 ]
         }
       ]
     },
