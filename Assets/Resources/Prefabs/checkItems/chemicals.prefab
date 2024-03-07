@@ -72,8 +72,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1325135103
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: ea7184607e1a8974d954b069e9bf26b4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -129,7 +129,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 6, y: 3.48}
   m_EdgeRadius: 0
 --- !u!114 &7853451609421643436
 MonoBehaviour:
@@ -146,6 +146,6 @@ MonoBehaviour:
   itemName: chemicals
   safeDescription: Toxic cleaning products are safe away from the food.
   unsafeDescription: ...
-  position: {x: 1, y: 3, z: 0}
-  isSafe: 0
-  scoreDelta: -1
+  position: {x: 0, y: -1, z: 1}
+  isSafe: 1
+  scoreDelta: 1

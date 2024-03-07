@@ -19,12 +19,13 @@ public class GameManager : MonoBehaviour
     [Header("UI Elements")]
     [SerializeField] private float transitionDuration = 2f;
     [SerializeField] private GameObject SuccessPanel, feedbackPanel, transitionPanel;
-    [SerializeField] private TMP_Text levelText;
-    [SerializeField] private TMP_Text scoreText;
-    [SerializeField] private TMP_Text feedbackText;
+    //[SerializeField] private TMP_Text levelText;
+    //[SerializeField] private TMP_Text scoreText;
+    //[SerializeField] private TMP_Text feedbackText;
     [SerializeField] private TMP_Text safetyDescription;
-    [SerializeField] private TMP_Text issuesFoundText;
+    //[SerializeField] private TMP_Text issuesFoundText;
 
+    private bool isLeft = true;
     private int score = 0, issuesFound = 0, currentSettingIndex = 0;
     public bool LevelCompleted { get; private set; } = false; // Track if the current level is completed
 
@@ -47,23 +48,28 @@ public class GameManager : MonoBehaviour
         transitionPanel.SetActive(false);
         Debug.Log(GameManager.Instance);
     }
+
+    private void Update(){
+        move();
+    }
+
     public void ItemClicked(FoodSafetyClickable item)
     {
         if (!LevelCompleted)
         {
-            if (feedbackPanel == null || levelText == null || scoreText == null || feedbackText == null || safetyDescription == null || issuesFoundText == null)
+            if (feedbackPanel == null || safetyDescription == null)
             {
                 Debug.LogWarning("Some UI elements are missing");
             }
             // Show item description regardless of its counted state
-            feedbackText.text = item.itemName;
+            //feedbackText.text = item.itemName;
             safetyDescription.text = item.isSafe ? item.safeDescription : item.unsafeDescription;
 
             if (!item.HasBeenCounted())
             {
                 // Update score and issues found only if the item hasn't been counted yet
                 score += item.scoreDelta;
-                scoreText.text = "Score: " + score.ToString();
+                //scoreText.text = "Score: " + score.ToString();
 
                 if (item.isSafe)
                 {
@@ -72,7 +78,7 @@ public class GameManager : MonoBehaviour
                     // commented out for playtest FLAG
                     //CheckForLevelCompletion();
                 }
-                issuesFoundText.text = "Issues found: " + issuesFound;
+                //issuesFoundText.text = "Issues found: " + issuesFound;
             }
 
             feedbackPanel.SetActive(true);
@@ -97,7 +103,7 @@ public class GameManager : MonoBehaviour
             transitionPanel.SetActive(true); // Show transition panel
             yield return new WaitForSeconds(transitionDuration); // Wait for the duration of the transition
             mainCamera.transform.position = cameraPositions[currentSettingIndex];
-            levelText.text = "Lv." + (currentSettingIndex + 1).ToString();
+            //levelText.text = "Lv." + (currentSettingIndex + 1).ToString();
             ResetLevel();
         }
         else
@@ -114,6 +120,10 @@ public class GameManager : MonoBehaviour
     {
         LevelCompleted = false; // Reset level completion status
         issuesFound = 0;
-        issuesFoundText.text = "Issues found: " + issuesFound;
+        //issuesFoundText.text = "Issues found: " + issuesFound;
+    }
+
+    private void move(){
+
     }
 }
