@@ -67,7 +67,17 @@
           "unsafeImage": "Images/Small stove",
           "score": 1,
           "position": [ 0, 1, 0 ]
-        }
+        },
+        {
+          "name": "dishWash",
+           "content": "Three-Compartment sink with adequate pressured supply of hot (minimum 120º) and cold water.",
+           "safeDescription": "Truck has a three-compartment sink specifically for dishwashing, there is a reasonable amount of space for someone to work at it. Water pressure is adequate, hot water temp is 120º, cold water is running too.",
+           "unsafeDescription": "Truck has a dishwashing sink, but when the handle is turned no water comes from the faucet.",
+           "safeImage": "Images/Kitchen sink(on)",
+           "unsafeImage": "Images/Kitchen sink"
+           "score": 1,
+           "postion": [ , , ]
+         }
       ]
     },
     {
