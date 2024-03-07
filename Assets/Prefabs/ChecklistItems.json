@@ -21,7 +21,7 @@
           "safeImage": "Images/Refrigerator Valve @ 37 F",
           "unsafeImage": "Images/Refrigerator Valve @ 42 F",
           "score": 1,
-          "position": [ 7, -1.5, 1 ]
+          "position": [ -7, 0.75, 1 ]
         },
         {
           "name": "foodTempHot",
@@ -66,7 +66,17 @@
           "safeImage": "Images/Handwashing Sink",
           "unsafeImage": "Images/Small stove",
           "score": 1,
-          "position": [ 0, 1, 1 ]
+          "position": [ 29.75, 0.95, 1 ]
+        },
+        {
+          "name": "paperTowel",
+          "content": "A Paper Towel Dispenser  is accessible for handwasing",
+          "safeDescription": "There is a paper towel dispenser",
+          "unsafeDescription": "...",
+          "safeImage": "Images/Paper towel dispenser",
+          "unsafeImage": "Images/transparent",
+          "score": 1,
+          "position": [ 29, 1.5, 1 ]
         }
       ]
     },

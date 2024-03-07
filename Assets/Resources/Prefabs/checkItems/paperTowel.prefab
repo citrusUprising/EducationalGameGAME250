@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 4100053669056698997}
   - component: {fileID: 6599869773096841166}
   - component: {fileID: 5161944933071518178}
-  - component: {fileID: 6460968633114323270}
+  - component: {fileID: 3586010336650446459}
   m_Layer: 0
-  m_Name: foodTempHot
+  m_Name: paperTowel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29,8 +29,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.75, y: 0.5, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -74,13 +74,13 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1325135103
   m_SortingLayer: 1
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 619d1e41a1b004446bcb801e1eb489e9, type: 3}
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 21300000, guid: 79a99583c3b5f2f4d8d81f491c019aaf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 3, y: 4.53}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -122,16 +122,16 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 6, y: 6}
-    newSize: {x: 1, y: 1}
+    oldSize: {x: 3, y: 4.53}
+    newSize: {x: 3, y: 4.53}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 6, y: 6}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &6460968633114323270
+--- !u!114 &3586010336650446459
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -143,9 +143,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a9f933b8ac904961aed3d63ff21000a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemName: foodTempHot
-  safeDescription: "The hot plate is at 137\xB0 F."
-  unsafeDescription: "The hot plate is at 131\xB0 F."
-  position: {x: -7, y: 0, z: 1}
-  isSafe: 1
-  scoreDelta: 1
+  itemName: paperTowel
+  safeDescription: There is a paper towel dispenser
+  unsafeDescription: ...
+  position: {x: 29, y: 1, z: 1}
+  isSafe: 0
+  scoreDelta: -1

@@ -75,7 +75,7 @@ SpriteRenderer:
   m_SortingLayerID: 1325135103
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 8bfe47fc1780fe144aeefbfe496ea695, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bb5e5323fa2dfe34faf42b95b1e2388d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -129,7 +129,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 6, y: 6}
   m_EdgeRadius: 0
 --- !u!114 &-5840453031104485387
 MonoBehaviour:
@@ -146,6 +146,6 @@ MonoBehaviour:
   itemName: handWash
   safeDescription: There is a sink specifically for hand-washing.
   unsafeDescription: There is a small stove next to the sink.
-  position: {x: 0, y: 1, z: 0}
-  isSafe: 0
-  scoreDelta: -1
+  position: {x: 28, y: 0, z: 1}
+  isSafe: 1
+  scoreDelta: 1
