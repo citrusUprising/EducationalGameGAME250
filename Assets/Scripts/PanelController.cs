@@ -9,7 +9,7 @@ public class PanelController : MonoBehaviour
     {
         if (panel != null)
         {
-            panel.SetActive(!isCollapsed); // Set the panel active state based on the collapsed state
+            panel.SetActive(true); // Set the panel active state based on the collapsed state
         }
     }
 
