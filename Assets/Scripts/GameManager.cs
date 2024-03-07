@@ -124,13 +124,13 @@ public class GameManager : MonoBehaviour
     }
 
     private void move(){
-        if (isLeft&&Input.GetKeyDown(KeyCode.RightArrow)){
+        if (isLeft&&Input.GetKeyDown(KeyCode.LeftArrow)){
             isLeft = false;
              Vector3 tempTrans = mainCamera.GetComponent<Transform>().position;
              tempTrans.x = 22;
              mainCamera.GetComponent<Transform>().position = tempTrans;
         }
-        else if (!isLeft&&Input.GetKeyDown(KeyCode.LeftArrow)){
+        else if (!isLeft&&Input.GetKeyDown(KeyCode.RightArrow)){
             isLeft = true;
             Vector3 tempTrans = mainCamera.GetComponent<Transform>().position;
             tempTrans.x = 0;
