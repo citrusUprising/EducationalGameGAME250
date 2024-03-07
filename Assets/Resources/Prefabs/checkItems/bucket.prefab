@@ -146,6 +146,6 @@ MonoBehaviour:
   itemName: bucket
   safeDescription: A bucket of santizing solution. It has clean wiping cloths nearby.
   unsafeDescription: ...
-  position: {x: 3, y: -2, z: 1}
+  position: {x: -10, y: -3, z: 0}
   isSafe: 1
   scoreDelta: 1

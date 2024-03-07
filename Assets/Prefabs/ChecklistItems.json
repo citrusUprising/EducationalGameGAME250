@@ -11,7 +11,7 @@
           "safeImage": "Images/Tub containing raw meat",
           "unsafeImage": "Images/Tub containing raw meat and onions",
           "score": 1,
-          "position": [ 7, 3, 1 ]
+          "position": [ 1, -3, -1 ]
         },
         {
           "name": "foodTempCold",
@@ -21,7 +21,7 @@
           "safeImage": "Images/Refrigerator Valve @ 37 F",
           "unsafeImage": "Images/Refrigerator Valve @ 42 F",
           "score": 1,
-          "position": [ -7, 0.75, 1 ]
+          "position": [ 1, -1.5, 0 ]
         },
         {
           "name": "foodTempHot",
@@ -31,7 +31,7 @@
           "safeImage": "Images/Hot Plate @ 137 F",
           "unsafeImage": "Images/Hot Plate @ 131 F",
           "score": 1,
-          "position": [ -7, 0.75, 1 ]
+          "position": [ 10, 0.25, 0 ]
         },
         {
           "name": "paperProducts",
@@ -41,7 +41,7 @@
           "safeImage": "Images/Service Items in organized container",
           "unsafeImage": "Images/Service Items strewn on counter",
           "score": 1,
-          "position": [ -7.2, -3, 1 ]
+          "position": [ 9.5, -3, 0 ]
         },
         {
           "name": "cuttingBoard",
@@ -51,7 +51,7 @@
           "safeImage": "Images/Cutting Board (Pristine)",
           "unsafeImage": "Images/Cutting Board (Damaged)",
           "score": 1,
-          "position": [ -4, 0, 1 ]
+          "position": [ -10, 0, 0 ]
         }
       ]
     },
@@ -66,7 +66,7 @@
           "safeImage": "Images/Handwashing Sink",
           "unsafeImage": "Images/Small stove",
           "score": 1,
-          "position": [ 29.75, 0.95, 1 ]
+          "position": [ -3, 0, 0 ]
         },
         {
           "name": "paperTowel",
@@ -79,15 +79,15 @@
           "position": [ 29, 1.5, 1 ]
         },
         {
-          "name": "tripleSink",
-          "content": "Water of adequate pressure available at unobstructed and accessible 3-compartment sink.",
-          "safeDescription": "There is a sink with three basins. The water comes out at a regular flow",
-          "unsafeDescription": "There is a sink with three basins. The water comes out sporadically with little pressure",
-          "safeImage": "Images/Kitchen sink (on)",
-          "unsafeImage": "Images/Kitchen sink",
-          "score": 1,
-          "position": [ 27, 0.95, 1 ]
-        }
+          "name": "dishWash",
+           "content": "Three-Compartment sink with adequate pressured supply of hot (minimum 120º) and cold water.",
+           "safeDescription": "Truck has a three-compartment sink specifically for dishwashing, there is a reasonable amount of space for someone to work at it. Water pressure is adequate, hot water temp is 120º.",
+           "unsafeDescription": "Truck has a dishwashing sink, but when the handle is turned lukewarm water comes out sporadically with little pressure",
+           "safeImage": "Images/Kitchen sink (on)",
+           "unsafeImage": "Images/Kitchen sink",
+           "score": 1,
+           "postion": [ -5.5, 0, 0]
+         }
       ]
     },
     {
@@ -101,7 +101,7 @@
           "safeImage": "Images/Sanitizing bucket",
           "unsafeImage": "Images/transparent",
           "score": 1,
-          "position": [ 3, -2, 1 ]
+          "position": [ -10.5, -3, 0 ]
         },
         {
           "name": "chemicals",
@@ -111,7 +111,7 @@
           "safeImage": "Images/Cleaning Product container",
           "unsafeImage": "Images/transparent",
           "score": 1,
-          "position": [ 0, -1, 1 ]
+          "position": [ 6, -3, 0 ]
         }
       ]
     },
@@ -126,7 +126,7 @@
           "safeImage": "Images/First aid kit",
           "unsafeImage": "Images/transparent",
           "score": 1,
-          "position": [ 2.5, 2.75, 1 ]
+          "position": [ -2.5, 4.25, 0 ]
         },
         {
           "name": "fireExtinguisher",
@@ -136,7 +136,7 @@
           "safeImage": "Images/Fire Extinguisher",
           "unsafeImage": "Images/transparent",
           "score": 1,
-          "position": [ -2, 3, 1 ]
+          "position": [ -11, 3.5, 0 ]
         }
       ]
     }

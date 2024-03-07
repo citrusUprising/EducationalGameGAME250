@@ -146,6 +146,6 @@ MonoBehaviour:
   itemName: handWash
   safeDescription: There is a sink specifically for hand-washing.
   unsafeDescription: There is a small stove next to the sink.
-  position: {x: 28, y: 0, z: 1}
-  isSafe: 1
-  scoreDelta: 1
+  position: {x: -3, y: 0, z: 0}
+  isSafe: 0
+  scoreDelta: -1
