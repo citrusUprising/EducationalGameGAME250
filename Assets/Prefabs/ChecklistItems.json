@@ -1,58 +1,37 @@
 {
   "sections": [
     {
-      "name": "Food Safety and Storage",
+      "name": "Licenses and Documentation",
+      "items": [
+        {
+          "name": "permit",
+          "content": "Truck must have valid Permit to Operate visibly displayed",
+          "safeDescription": "It's a Permit to Operate, last renewed 3/20/2023. Today's date is March 14th, 2024.",
+          "unsafeDescription": "It's a Permit to Operate, last renewed 3/11/2023. Today's date is March 14th, 2024.",
+          "safeImage": "Images/Normal Certificate",
+          "unsafeImage": "Images/Outdated Certificate (1)",
+          "verdictFalseNeg": "...",
+          "verdictFalsePos": "...",
+          "score": 1,
+          "position": [ 16, 2, 0 ],
+          "link": "https://cpd.sccgov.org/mff-annual-permit-renewal-inspections"
+        }
+      ]
+    },
+    {
+    "name": "Food Safety and Storage",
       "items": [
         {
           "name": "meatStorage",
           "content": "Separate storage for raw meat away from cooked food.",
           "safeDescription": "This tub in the fridge has raw meat in it.",
-          "unsafeDescription": "This tub in the fridge has raw meat and vegetables together.",
+          "unsafeDescription": "This tub in the fridge has raw and cooked meat together.",
           "safeImage": "Images/Tub containing raw meat",
-          "unsafeImage": "Images/Tub containing raw meat and onions",
+          "unsafeImage": "Images/Tub containing raw meat and cooked meat",
           "verdictFalseNeg": "The container in the fridge contains exclusively raw meat, this is proper safe storage practice. Not a violation.",
           "verdictFalsePos": "The container in the fridge has raw meat and cooked food stored together. This could lead to contamination, raw meat and cooked foods need to be stored in separate containers. This is a violation.",
           "score": 1,
-          "position": [ -5.8, -1.55, -1 ],
-          "link": "https://www.youtube.com/"
-        },
-        {
-          "name": "foodTempHot",
-          "content": "Food maintained at safe temperatures: ≥135°F for hot foods",
-          "safeDescription": "The hot plate is at 137° F.",
-          "unsafeDescription": "The hot plate is at 131° F.",
-          "safeImage": "Images/Hot Plate @ 137 F",
-          "unsafeImage": "Images/Hot Plate @ 131 F",
-          "verdictFalseNeg": "The hot plate is maintaining an adequate temperature of 137° F. Hot foods must be kept at or above 135° F. This hot plate is in good order, no violation.",
-          "verdictFalsePos": "Hot foods must be kept at or above 135° F, the hot plate in this food truck is only reaching 131° F, this is a violation.",
-          "score": 1,
-          "position": [ 5, 0.8, 0 ],
-          "link": "https://www.youtube.com/"
-        },
-        {
-          "name": "paperProducts",
-          "content": "Paper products and other service items are stored in a clean place until used. (utensils, plate, wrapper, to-go boxes…)",
-          "safeDescription": "The service items are all in an organized container.",
-          "unsafeDescription": "The service items are all strewn about on the counter.",
-          "safeImage": "Images/Service Items in organized container",
-          "unsafeImage": "Images/Service Items strewn on counter",
-          "verdictFalseNeg": "The paper food service items are organized in a clean bin, this is a good storage practice there is no violation.",
-          "verdictFalsePos": "The paper food service items in the truck are not being stored in a clean area, they need to be kept in a safe and clean designated area or container. This is a violation.",
-          "score": 1,
-          "position": [ 1.4, -2.4, 0 ],
-          "link": "https://www.youtube.com/"
-        },
-        {
-          "name": "cuttingBoard",
-          "content": "Cutting boards are smooth, easily cleanable and in good repair.",
-          "safeDescription": "This cutting board is undamaged",
-          "unsafeDescription": "This cutting board is rough and hard to clean.",
-          "safeImage": "Images/Cutting Board (Pristine)",
-          "unsafeImage": "Images/Cutting Board (Damaged)",
-          "verdictFalseNeg": "This cutting board is clean and its surface is smooth and undamaged. This is in good shape, no violation.",
-          "verdictFalsePos": "This cutting board is very worn, the surface is now rough and full of many deep scars. This cutting board can no longer be cleaned appropriately and needs to  be replaced, this is a violation.",
-          "score": 1,
-          "position": [ 15.5, 0.6, 0 ]
+          "position": [ -5.8, -1.55, -1 ]
         },
         {
           "name": "foodTempCold",
@@ -65,9 +44,45 @@
           "verdictFalsePos": "The fridge temperature is reading 42° F, cold foods need to be stored at 41° F or below, this fridge is not cold enough, this is a violation.",
           "score": 1,
           "position": [ -6.1, 2.3, 0 ]
+        },
+        {
+          "name": "foodTempHot",
+          "content": "Food maintained at safe temperatures: ≥135°F for hot foods",
+          "safeDescription": "The hot plate is at 137° F.",
+          "unsafeDescription": "The hot plate is at 131° F.",
+          "safeImage": "Images/Hot Plate @ 137 F",
+          "unsafeImage": "Images/Hot Plate @ 131 F",
+          "verdictFalseNeg": "The hot plate is maintaining an adequate temperature of 137° F. Hot foods must be kept at or above 135° F. This hot plate is in good order, no violation.",
+          "verdictFalsePos": "Hot foods must be kept at or above 135° F, the hot plate in this food truck is only reaching 131° F, this is a violation.",
+          "score": 1,
+          "position": [ 5, 0.8, 0 ]
+        },
+        {
+          "name": "paperProducts",
+          "content": "Paper products and other service items are stored in a clean place until used. (utensils, plate, wrapper, to-go boxes…)",
+          "safeDescription": "The service items are all in an organized container.",
+          "unsafeDescription": "The service items are all strewn about on the counter.",
+          "safeImage": "Images/Service Items in organized container",
+          "unsafeImage": "Images/Service Items strewn on counter",
+          "verdictFalseNeg": "The paper food service items are organized in a clean bin, this is a good storage practice there is no violation.",
+          "verdictFalsePos": "The paper food service items in the truck are not being stored in a clean area, they need to be kept in a safe and clean designated area or container. This is a violation.",
+          "score": 1,
+          "position": [ 1.4, -2.4, 0 ]
+        },
+        {
+          "name": "cuttingBoard",
+          "content": "Cutting boards are smooth, easily cleanable and in good repair.",
+          "safeDescription": "This cutting board is undamaged",
+          "unsafeDescription": "This cutting board is rough and hard to clean.",
+          "safeImage": "Images/Cutting Board (Pristine)",
+          "unsafeImage": "Images/Cutting Board (Damaged)",
+          "verdictFalseNeg": "This cutting board is clean and its surface is smooth and undamaged. This is in good shape, no violation.",
+          "verdictFalsePos": "This cutting board is very worn, the surface is now rough and full of many deep scars. This cutting board can no longer be cleaned appropriately and needs to  be replaced, this is a violation.",
+          "score": 1,
+          "position": [ 15.5, 0.6, 0 ]
         }
       ]
-    },
+   },
     {
       "name": "Equipment and Facilities",
       "items": [
@@ -96,17 +111,18 @@
           "position": [ 27, 1.5, 1 ]
         },
         {
-           "name": "dishWash",
-           "content": "Three-Compartment sink with adequate pressured supply of hot (minimum 120º) and cold water.",
-           "safeDescription": "Truck has a three-compartment sink specifically for dishwashing, there is a reasonable amount of space for someone to work at it. Water pressure is adequate, hot water temp is 120º.",
-           "unsafeDescription": "Truck has a dishwashing sink, but when the handle is turned lukewarm water comes out sporadically with little pressure.",
-           "safeImage": "Images/Kitchen sink (on)",
-           "unsafeImage": "Images/Kitchen sink",
-           "verdictFalseNeg": "The dishwashing sink has three separate compartments, one for scrubbing off the pans, one for sanitizing after the food has been removed, and the final for rinsing the pan clean. There is adequate pressure in both the cold and hot lines, and the hot water reaches 120° F, which meets the minimum standard temperature. No violation here.",
-           "verdictFalsePos": "The dishwashing sink has three separate compartments, one for scrubbing off the pans, one for sanitizing after the food has been removed, and the final for rinsing the pan clean. However the water pressure available is inadequate, and the hot water is not reaching an appropriate temperature. This is in violation.",
-           "score": 1,
-           "position": [ 25.2, 0.9, 0 ]
-         }
+          "name": "dishWash",
+          "content": "Three-Compartment sink with adequate pressured supply of hot (minimum 120º) and cold water.",
+          "safeDescription": "Truck has a three-compartment sink specifically for dishwashing, there is a reasonable amount of space for someone to work at it. Water pressure is adequate, hot water temp is 120º.",
+          "unsafeDescription": "Truck has a dishwashing sink, but when the handle is turned lukewarm water comes out sporadically with little pressure.",
+          "safeImage": "Images/Kitchen sink (on)",
+          "unsafeImage": "Images/Kitchen sink",
+          "verdictFalseNeg": "The dishwashing sink has three separate compartments, one for scrubbing off the pans, one for sanitizing after the food has been removed, and the final for rinsing the pan clean. There is adequate pressure in both the cold and hot lines, and the hot water reaches 120° F, which meets the minimum standard temperature. No violation here.",
+          "verdictFalsePos": "The dishwashing sink has three separate compartments, one for scrubbing off the pans, one for sanitizing after the food has been removed, and the final for rinsing the pan clean. However the water pressure available is inadequate, and the hot water is not reaching an appropriate temperature. This is in violation.",
+          "score": 1,
+          "position": [ 25.2, 0.9, 0 ],
+          "link": "https://www.youtube.com/"
+        }
       ]
     },
     {
@@ -135,6 +151,31 @@
           "verdictFalsePos": "There are not adequate cleaning products available on this truck. There needs to be a sufficient amount of cleaning chemicals stored in a safe designated area. This is a  violation.",
           "score": 1,
           "position": [ -2.3, -2.4, 0 ]
+        },
+        {
+          "name": "mouseDroppings",
+          "content": "Facility free of vermin and pests.",
+          "safeDescription": "...",
+          "unsafeDescription": "tiny, brown orbs... they don't smell very good",
+          "safeImage": "Images/Nothing 2",
+          "unsafeImage": "Images/Mouse Dropping 2",
+          "verdictFalseNeg": "",
+          "verdictFalsePos": "",
+          "score": 1,
+          "position": [ -2.3, -2.4, 0 ],
+          "link": "https://www.ecocarepestcontrol.com/signs-pest-problem/"
+        },
+        {
+          "name": "dustBin",
+          "content": "Garbage and food waste properly disposed of.",
+          "safeDescription": "A Trash bin",
+          "unsafeDescription": "A Trash bin, the contents are overflowing",
+          "safeImage": "Images/Trash Normal",
+          "unsafeImage": "Images/Trash Overflowing",
+          "verdictFalseNeg": "",
+          "verdictFalsePos": "",
+          "score": 1,
+          "position": [ -2.3, -2.4, 0 ]
         }
       ]
     },
@@ -156,14 +197,15 @@
         {
           "name": "fireExtinguisher",
           "content": "Wall-mounted, minimum 10 BC rated approved fire extinguisher accessible",
-          "safeDescription": "This BC 15-rated fire extinguisher is wall-mounted.",
-          "unsafeDescription": "This A 4.2-rated fire extinguisher is wall-mounted.",
+          "safeDescription": "This 20 BC rated fire extinguisher is wall-mounted.",
+          "unsafeDescription": "This 4 A rated fire extinguisher is wall-mounted.",
           "safeImage": "Images/Fire Extinguisher",
           "unsafeImage": "Images/Fire Extinguisher",
           "verdictFalseNeg": "There is a BC rated fire extinguisher mounted in the truck. It is a requirement that there be a BC rated fire extinguisher easily accessible in case there are any grease or electrical fires that happen. As this fire extinguisher meets the requirements there is not a violation here.",
           "verdictFalsePos": "There is a fire extinguisher available in this truck, but it is not of an appropriate rating. It is rated for class A fires, basic combustables, and are filled primarily with compressed water, which makes them insufficient to handle grease and electrical fires, common in kitchens. This fire extinguisher needs to be replaced with a BC rated one. This is a violation.",
           "score": 1,
-          "position": [ 16.2, 2.6, 0 ]
+          "position": [ 16.2, 2.6, 0 ],
+          "link": "https://www.kidde.com/home-safety/en/us/support/help-center/browse-articles/articles/types-of-fire-extinguishers.html"
         }
       ]
     }
