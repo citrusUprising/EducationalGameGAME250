@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Assertions;
+using TMPro;
 
 public class CheckBox : MonoBehaviour
 {
@@ -10,7 +12,10 @@ public class CheckBox : MonoBehaviour
 
     [SerializeField] Toggle toggleYes;
     [SerializeField] Toggle toggleNo;
-    // Start is called before the first frame update
+    [SerializeField] Image wrongVerdict;
+    [SerializeField] Image correctVerdict;
+    [SerializeField] TMP_Text notesText;
+
     public void checkYes()
     {
         if (!isFilledIn)
@@ -64,6 +69,20 @@ public class CheckBox : MonoBehaviour
             isFilledIn = true;
             toggleNo.SetIsOnWithoutNotify(true);
             toggleYes.SetIsOnWithoutNotify(false);
+        }
+    }
+
+    public void grade(bool rightAnswer)
+    {
+        Assert.IsTrue(isFilledIn);
+
+        if (isSafe == rightAnswer)
+        {
+            correctVerdict.enabled = true;
+        }
+        else
+        {
+            wrongVerdict.enabled = true;
         }
     }
 }
