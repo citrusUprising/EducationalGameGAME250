@@ -2,6 +2,7 @@ using UnityEngine;
 using TMPro; // For TextMeshPro
 using System.Collections.Generic;
 using System;
+using UnityEngine.EventSystems; // Needed for IPointerClickHandler
 
 [System.Serializable]
 public class ChecklistItem
@@ -14,6 +15,7 @@ public class ChecklistItem
     public string safeImage;
     public string unsafeImage;
     public float[] position;
+    public string link;
 }
 
 
@@ -36,6 +38,7 @@ public class ChecklistManager : MonoBehaviour
     [SerializeField] private ChecklistSections checklistData;
     [SerializeField] private Transform checklistUIParent;
     [SerializeField] private GameObject checklistItemPrefab;
+    [SerializeField] private GameObject checklistLinkPrefab;
     [SerializeField] private GameObject checklistHeaderPrefab;
     [SerializeField] private Dictionary<string, GameObject> itemPrefabs; // Holds item name to prefab mapping
     [SerializeField] private Transform itemsParent;
@@ -120,6 +123,11 @@ public class ChecklistManager : MonoBehaviour
                         collider.size = new Vector2(width, height);
                         GameObject gameItem = Instantiate(prefab, clickable.position, Quaternion.identity, itemsParent);
                     }
+                    // add external link to the clickable component
+                    if (!string.IsNullOrEmpty(item.link))
+                    {
+                        CreateLink(item.link, uiItem.transform);
+                    }
                 }
                 else
                 {
@@ -136,4 +144,15 @@ public class ChecklistManager : MonoBehaviour
         TMP_Text headerTextComponent = header.GetComponentInChildren<TMP_Text>();
         if (headerTextComponent != null) headerTextComponent.text = sectionName;
     }
+
+    void CreateLink(string URL, Transform parentItem)
+    {
+        GameObject linkItem = Instantiate(checklistLinkPrefab, parentItem);
+        LinkOpener linkInstance = linkItem.GetComponent<LinkOpener>();
+        linkInstance.URL = URL;
+        // Optionally set parent for UI elements
+        // linkInstance.transform.SetParent(parentTransform, false);
+    }
+
+
 }

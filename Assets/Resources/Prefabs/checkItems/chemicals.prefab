@@ -129,7 +129,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 6, y: 3.48}
   m_EdgeRadius: 0
 --- !u!114 &7853451609421643436
 MonoBehaviour:
@@ -147,5 +147,5 @@ MonoBehaviour:
   safeDescription: Toxic cleaning products are safe away from the food.
   unsafeDescription: ...
   position: {x: -2.3, y: -2.4, z: 0}
-  isSafe: 0
-  scoreDelta: -1
+  isSafe: 1
+  scoreDelta: 1

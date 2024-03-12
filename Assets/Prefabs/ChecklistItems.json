@@ -11,7 +11,8 @@
           "safeImage": "Images/Tub containing raw meat",
           "unsafeImage": "Images/Tub containing raw meat and onions",
           "score": 1,
-          "position": [ -5.8, -1.55, -1 ]
+          "position": [ -5.8, -1.55, -1 ],
+          "link": "https://www.youtube.com/"
         },
         {
           "name": "foodTempHot",
@@ -21,7 +22,8 @@
           "safeImage": "Images/Hot Plate @ 137 F",
           "unsafeImage": "Images/Hot Plate @ 131 F",
           "score": 1,
-          "position": [ 5, 0.8, 0 ]
+          "position": [ 5, 0.8, 0 ],
+          "link": "https://www.youtube.com/"
         },
         {
           "name": "paperProducts",
@@ -31,7 +33,8 @@
           "safeImage": "Images/Service Items in organized container",
           "unsafeImage": "Images/Service Items strewn on counter",
           "score": 1,
-          "position": [ 1.4, -2.4, 0 ]
+          "position": [ 1.4, -2.4, 0 ],
+          "link": "https://www.youtube.com/"
         },
         {
           "name": "cuttingBoard",

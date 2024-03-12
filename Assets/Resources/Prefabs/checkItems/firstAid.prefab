@@ -129,7 +129,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 6, y: 6}
   m_EdgeRadius: 0
 --- !u!114 &3586010336650446459
 MonoBehaviour:
@@ -148,5 +148,5 @@ MonoBehaviour:
     supplies.
   unsafeDescription: ...
   position: {x: 25, y: 3.2, z: 0}
-  isSafe: 0
-  scoreDelta: -1
+  isSafe: 1
+  scoreDelta: 1

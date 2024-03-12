@@ -129,7 +129,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 6, y: 2.87}
   m_EdgeRadius: 0
 --- !u!114 &6593534057890006784
 MonoBehaviour:
@@ -147,5 +147,5 @@ MonoBehaviour:
   safeDescription: A bucket of santizing solution. It has clean wiping cloths nearby.
   unsafeDescription: ...
   position: {x: 27.5, y: -2.6, z: 0}
-  isSafe: 0
-  scoreDelta: -1
+  isSafe: 1
+  scoreDelta: 1
