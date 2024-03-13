@@ -1501,6 +1501,9 @@ MonoBehaviour:
   wrongVerdict: {fileID: 70537583146039383}
   correctVerdict: {fileID: 2684826294852734231}
   notesText: {fileID: 6974646589353705531}
+  verdictFalseNeg: 
+  verdictFalsePos: 
+  correctAnswer: 0
 --- !u!1 &6870567534040906395
 GameObject:
   m_ObjectHideFlags: 0

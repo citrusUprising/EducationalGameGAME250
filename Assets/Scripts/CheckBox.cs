@@ -7,7 +7,8 @@ using TMPro;
 
 public class CheckBox : MonoBehaviour
 {
-    bool isFilledIn = false;
+    [HideInInspector]
+    public bool isFilledIn = false;
     bool isSafe = false;
 
     [SerializeField] Toggle toggleYes;
@@ -15,6 +16,9 @@ public class CheckBox : MonoBehaviour
     [SerializeField] Image wrongVerdict;
     [SerializeField] Image correctVerdict;
     [SerializeField] TMP_Text notesText;
+    public string verdictFalseNeg;
+    public string verdictFalsePos;
+    public bool correctAnswer;
 
     public void checkYes()
     {
@@ -83,6 +87,30 @@ public class CheckBox : MonoBehaviour
         else
         {
             wrongVerdict.enabled = true;
+        }
+    }
+    public bool trySubmit()
+    {
+        if (isSafe == correctAnswer)
+        {
+            notesText.text = "Correct!";
+            wrongVerdict.enabled = false;
+            correctVerdict.enabled = true;
+            return true;
+        }
+        else
+        {
+            wrongVerdict.enabled = true;
+            correctVerdict.enabled = false;
+            if (isSafe)
+            {
+                notesText.text = verdictFalsePos;
+            }
+            else
+            {
+                notesText.text = verdictFalseNeg;
+            }
+            return false;
         }
     }
 }

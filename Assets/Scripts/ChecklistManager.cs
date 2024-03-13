@@ -11,6 +11,8 @@ public class ChecklistItem
     public string content;
     public string safeDescription;
     public string unsafeDescription;
+    public string verdictFalseNeg;
+    public string verdictFalsePos;
     public int score;
     public string safeImage;
     public string unsafeImage;
@@ -43,6 +45,9 @@ public class ChecklistManager : MonoBehaviour
     [SerializeField] private Dictionary<string, GameObject> itemPrefabs; // Holds item name to prefab mapping
     [SerializeField] private Transform itemsParent;
     [SerializeField] private string subfolderPath = "Prefabs/checkItems";
+    [SerializeField] private GameObject notAllFilledWarning;
+    public CheckBox[] checkBoxes;
+    private bool isAllCorrect = false;
 
     void Start()
     {
@@ -87,8 +92,9 @@ public class ChecklistManager : MonoBehaviour
                     if (textComponent != null) textComponent.text = item.content;
                     // Instantiate the food safety item in the scene
                     FoodSafetyClickable clickable = prefab.GetComponent<FoodSafetyClickable>();
+                    CheckBox checkBox = uiItem.GetComponent<CheckBox>();
                     // assign the item's description to the clickable component
-                    if (clickable != null)
+                    if (clickable != null && checkBox != null)
                     {
                         clickable.itemName = item.name;
                         clickable.isSafe = UnityEngine.Random.Range(0, 2) == 0; // Randomly set the safety state
@@ -98,6 +104,11 @@ public class ChecklistManager : MonoBehaviour
                         clickable.position = new Vector3(item.position[0], item.position[1], item.position[2]);
                         // get the srpite render from the prefab
                         SpriteRenderer spriteRenderer = prefab.GetComponent<SpriteRenderer>();
+
+                        // assign correct checking fields to the checkBox component
+                        checkBox.correctAnswer = clickable.isSafe;
+                        checkBox.verdictFalseNeg = item.verdictFalseNeg;
+                        checkBox.verdictFalsePos = item.verdictFalsePos;
                         // change the sprite to item.safeImage if the item is safe, item.unsafeImage otherwise
                         if (clickable.isSafe)
                         {
@@ -110,12 +121,15 @@ public class ChecklistManager : MonoBehaviour
                         float width = 1;
                         float height = 1;
                         // get width and height of the sprite
-                        try{
+                        try
+                        {
                             width = spriteRenderer.sprite.bounds.size.x;
                             height = spriteRenderer.sprite.bounds.size.y;
 
-                        }catch(Exception e){
-                            Debug.Log("Error getting sprite bounds for " + item.name + "isSafe: "+ clickable.isSafe);
+                        }
+                        catch (Exception e)
+                        {
+                            Debug.Log("Error getting sprite bounds for " + item.name + "isSafe: " + clickable.isSafe);
                             Debug.Log(e);
                         }
                         // set the scale of the collider's size to the sprite's size
@@ -154,5 +168,30 @@ public class ChecklistManager : MonoBehaviour
         // linkInstance.transform.SetParent(parentTransform, false);
     }
 
+    public void submitListNshow()
+    {
+        notAllFilledWarning.SetActive(false);
+        checkBoxes = FindObjectsOfType<CheckBox>();
+        foreach (CheckBox checkBox in checkBoxes)
+        {
+            if (!checkBox.isFilledIn)
+            {
+                Debug.Log("Not all filled");
+                notAllFilledWarning.SetActive(true);
+                return;
+            }
+        }
+        foreach (CheckBox checkBox in checkBoxes)
+        {
+            bool result = checkBox.trySubmit();
+            isAllCorrect = isAllCorrect && result;
+        }
+        if (isAllCorrect)
+        {
+            Debug.Log("All correct");
+        }else{
+            Debug.Log("Not all correct");
+        }
+    }
 
 }
