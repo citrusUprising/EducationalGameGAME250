@@ -10,8 +10,8 @@
           "unsafeDescription": "It's a Permit to Operate, last renewed 3/11/2023. Today's date is March 14th, 2024.",
           "safeImage": "Images/Normal Certficate",
           "unsafeImage": "Images/Outdated Certficate (1)",
-          "verdictFalseNeg": "...",
-          "verdictFalsePos": "...",
+          "verdictFalseNeg": "The permit in this truck is valid because it was issued less than one year ago, no violation.",
+          "verdictFalsePos": "The permit in this truck is not valid because it was issued more than one year ago, this is a violation.",
           "score": 1,
           "position": [ 16, 2, 0 ],
           "link": "https://cpd.sccgov.org/mff-annual-permit-renewal-inspections"
@@ -31,7 +31,8 @@
           "verdictFalseNeg": "The container in the fridge contains exclusively raw meat, this is proper safe storage practice. Not a violation.",
           "verdictFalsePos": "The container in the fridge has raw meat and cooked food stored together. This could lead to contamination, raw meat and cooked foods need to be stored in separate containers. This is a violation.",
           "score": 1,
-          "position": [ -5.8, -1.55, -1 ]
+          "position": [ -5.8, -1.55, -1 ],
+          "link": "https://www.foodtruckoperator.com/articles/how-to-preventing-cross-contamination-in-the-food-truck-environment/"
         },
         {
           "name": "foodTempCold",
@@ -44,6 +45,7 @@
           "verdictFalsePos": "The fridge temperature is reading 42° F, cold foods need to be stored at 41° F or below, this fridge is not cold enough, this is a violation.",
           "score": 1,
           "position": [ -6.1, 2.3, 0 ]
+          "link": "https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/refrigeration"
         },
         {
           "name": "foodTempHot",
@@ -56,6 +58,7 @@
           "verdictFalsePos": "Hot foods must be kept at or above 135° F, the hot plate in this food truck is only reaching 131° F, this is a violation.",
           "score": 1,
           "position": [ 5, 0.8, 0 ]
+          "link": "https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/steps-keep-food-safe"
         },
         {
           "name": "paperProducts",
@@ -117,11 +120,11 @@
           "unsafeDescription": "Truck has a dishwashing sink, but when the handle is turned lukewarm water comes out sporadically with little pressure.",
           "safeImage": "Images/Kitchen sink (on)",
           "unsafeImage": "Images/Kitchen sink",
-          "verdictFalseNeg": "The dishwashing sink has three separate compartments, one for scrubbing off the pans, one for sanitizing after the food has been removed, and the final for rinsing the pan clean. There is adequate pressure in both the cold and hot lines, and the hot water reaches 120° F, which meets the minimum standard temperature. No violation here.",
-          "verdictFalsePos": "The dishwashing sink has three separate compartments, one for scrubbing off the pans, one for sanitizing after the food has been removed, and the final for rinsing the pan clean. However the water pressure available is inadequate, and the hot water is not reaching an appropriate temperature. This is in violation.",
+          "verdictFalseNeg": "The dishwashing sink has three separate compartments, one for scrubbing off the pans, one for rinsing, and the final for santizing. There is adequate pressure in both the cold and hot lines, and the hot water reaches 120° F, which meets the minimum standard temperature. No violation here.",
+          "verdictFalsePos": "The dishwashing sink has three separate compartments, one for scrubbing off the pans, one for rinsing, and the final for santizing. However the water pressure available is inadequate, and the hot water is not reaching an appropriate temperature. This is in violation.",
           "score": 1,
           "position": [ 25.2, 0.9, 0 ],
-          "link": "https://www.youtube.com/"
+          "link": "https://www.fooddocs.com/post/3-compartment-sink"
         }
       ]
     },
@@ -159,8 +162,8 @@
           "unsafeDescription": "tiny, brown orbs... they don't smell very good",
           "safeImage": "Images/Nothing 2",
           "unsafeImage": "Images/Mouse Dropping 2",
-          "verdictFalseNeg": "",
-          "verdictFalsePos": "",
+          "verdictFalseNeg": "The floor and cabinets in the truck look clean, no violation here.",
+          "verdictFalsePos": "There are some mouse droppings here and there. This is a violation.",
           "score": 1,
           "position": [ -2.3, -2.4, 0 ],
           "link": "https://www.ecocarepestcontrol.com/signs-pest-problem/"
@@ -172,8 +175,8 @@
           "unsafeDescription": "A Trash bin, the contents are overflowing",
           "safeImage": "Images/Trash Normal",
           "unsafeImage": "Images/Trash Overflowing",
-          "verdictFalseNeg": "",
-          "verdictFalsePos": "",
+          "verdictFalseNeg": "The trash bin looks tidy and the bag has been recently changed. No violation.",
+          "verdictFalsePos": "The trash been is overflowing, this needs to be emptied regularly and replaced with a fresh garbage bag. This is a violation.",
           "score": 1,
           "position": [ -2.3, -2.4, 0 ]
         }
