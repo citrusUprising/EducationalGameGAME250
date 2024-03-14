@@ -26,22 +26,25 @@ public class HoverOverClipboard : MonoBehaviour
         if (isHovering && isClosed)
         {
             open();
+            Debug.Log("I'm opening");
         }
         if (!isHovering && !isClosed)
         {
             close();
+            Debug.Log ("I'm Closing");
+        }
+
+        
+     if (EventSystem.current.IsPointerOverGameObject())
+        {
+            isHovering = true;
+        } else 
+        {
+            isHovering = false;
         }
     }
 
-    public void enter()
-    {
-        isHovering = true;
-    }
-
-    public void exit()
-    {
-        isHovering = false;
-    }
+        
 
     void open() 
     {
