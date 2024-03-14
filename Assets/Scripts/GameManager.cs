@@ -76,12 +76,22 @@ public class GameManager : MonoBehaviour
                     issuesFound++;
                     // Check if all issues have been found after processing the clicked item
                     // commented out for playtest FLAG
-                    //CheckForLevelCompletion();
+                    //CheckForLevelCompletion();a
                 }
                 //issuesFoundText.text = "Issues found: " + issuesFound;
             }
 
             feedbackPanel.SetActive(true);
+            Debug.Log(item.transform.position);
+            Debug.Log(item.transform.localPosition);
+
+            Vector3 position = mainCamera.WorldToScreenPoint(item.transform.localPosition);
+
+            position += new Vector3(0, 50, 0);
+            feedbackPanel.transform.position = position;
+
+
+            //feedbackPanel.transform.localPosition = item.transform.localPosition;
         }
     }
 

@@ -22,15 +22,7 @@ public class HoverOverClipboard : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (EventSystem.current.IsPointerOverGameObject())
-        {
-            isHovering = true;
-        }
-        else 
-        {
-            isHovering = false;
-        }
-        
+       
         if (isHovering && isClosed)
         {
             open();
@@ -39,6 +31,16 @@ public class HoverOverClipboard : MonoBehaviour
         {
             close();
         }
+    }
+
+    public void enter()
+    {
+        isHovering = true;
+    }
+
+    public void exit()
+    {
+        isHovering = false;
     }
 
     void open() 
