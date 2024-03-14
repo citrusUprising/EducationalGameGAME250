@@ -44,7 +44,7 @@
           "verdictFalseNeg": "The fridge is maintaining a steady temperature of 37° F, cold food needs to be kept at 41° F or below. This is in the proper temperature range, not a violation.",
           "verdictFalsePos": "The fridge temperature is reading 42° F, cold foods need to be stored at 41° F or below, this fridge is not cold enough, this is a violation.",
           "score": 1,
-          "position": [ -6.1, 2.3, 0 ]
+          "position": [ -6.1, 2.3, 0 ],
           "link": "https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/refrigeration"
         },
         {
@@ -57,7 +57,7 @@
           "verdictFalseNeg": "The hot plate is maintaining an adequate temperature of 137° F. Hot foods must be kept at or above 135° F. This hot plate is in good order, no violation.",
           "verdictFalsePos": "Hot foods must be kept at or above 135° F, the hot plate in this food truck is only reaching 131° F, this is a violation.",
           "score": 1,
-          "position": [ 5, 0.8, 0 ]
+          "position": [ 5, 0.8, 0 ],
           "link": "https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/steps-keep-food-safe"
         },
         {
