@@ -75,7 +75,7 @@ SpriteRenderer:
   m_SortingLayerID: 1325135103
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 619d1e41a1b004446bcb801e1eb489e9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7851e083a58a78740b6f64c6dc0755a2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -147,5 +147,5 @@ MonoBehaviour:
   safeDescription: "The hot plate is at 137\xB0 F."
   unsafeDescription: "The hot plate is at 131\xB0 F."
   position: {x: 5, y: 0.8, z: 0}
-  isSafe: 1
-  scoreDelta: 1
+  isSafe: 0
+  scoreDelta: -1

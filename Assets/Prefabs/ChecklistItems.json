@@ -13,7 +13,7 @@
           "verdictFalseNeg": "The permit in this truck is valid because it was issued less than one year ago, no violation.",
           "verdictFalsePos": "The permit in this truck is not valid because it was issued more than one year ago, this is a violation.",
           "score": 1,
-          "position": [ 16, 2, 0 ],
+          "position": [ 6.7, 2.5, 0 ],
           "link": "https://cpd.sccgov.org/mff-annual-permit-renewal-inspections"
         }
       ]
@@ -70,7 +70,7 @@
           "verdictFalseNeg": "The paper food service items are organized in a clean bin, this is a good storage practice there is no violation.",
           "verdictFalsePos": "The paper food service items in the truck are not being stored in a clean area, they need to be kept in a safe and clean designated area or container. This is a violation.",
           "score": 1,
-          "position": [ 1.4, -2.4, 0 ]
+          "position": [ -2, 4.1, 0 ]
         },
         {
           "name": "cuttingBoard",
@@ -111,7 +111,7 @@
           "verdictFalseNeg": "There are paper towels closely accessible to the hand washing sink. This is in good order, not a violation.",
           "verdictFalsePos": "There are no paper towels easily accessible near the hand washing sink. This is a necessary supply that needs to be kept stocked and usable, this is a violation.",
           "score": 1,
-          "position": [ 27, 1.5, 1 ]
+          "position": [ 27.1, 1.5, 1 ]
         },
         {
           "name": "dishWash",
@@ -164,8 +164,11 @@
           "unsafeImage": "Images/Mouse Dropping 2",
           "verdictFalseNeg": "The floor and cabinets in the truck look clean, no violation here.",
           "verdictFalsePos": "There are some mouse droppings here and there. This is a violation.",
+          "unsafeImage": "Images/Mouse Droppings 2",
+          "verdictFalseNeg": "The floor and cabinets in the truck look clean, no violation here.",
+          "verdictFalsePos": "There are some mouse droppings here and there. This is a violation.",
           "score": 1,
-          "position": [ -2.3, -2.4, 0 ],
+          "position": [ 4.8, -3.1, 0 ],
           "link": "https://www.ecocarepestcontrol.com/signs-pest-problem/"
         },
         {
@@ -173,12 +176,12 @@
           "content": "Garbage and food waste properly disposed of.",
           "safeDescription": "A Trash bin",
           "unsafeDescription": "A Trash bin, the contents are overflowing",
-          "safeImage": "Images/Trash Normal",
+          "safeImage": "Images/Dustbin Normal-Bigger",
           "unsafeImage": "Images/Trash Overflowing",
           "verdictFalseNeg": "The trash bin looks tidy and the bag has been recently changed. No violation.",
           "verdictFalsePos": "The trash been is overflowing, this needs to be emptied regularly and replaced with a fresh garbage bag. This is a violation.",
           "score": 1,
-          "position": [ -2.3, -2.4, 0 ]
+          "position": [ 16, -2, 0 ]
         }
       ]
     },

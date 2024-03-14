@@ -29,7 +29,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -129,7 +129,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 19, y: 10.76}
   m_EdgeRadius: 0
 --- !u!114 &3586010336650446459
 MonoBehaviour:
@@ -144,8 +144,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemName: permit
-  safeDescription: There is a paper towel dispenser
-  unsafeDescription: ...
-  position: {x: 27, y: 1.5, z: 1}
-  isSafe: 0
-  scoreDelta: -1
+  safeDescription: It's a Permit to Operate, last renewed 3/20/2023. Today's date
+    is March 14th, 2024.
+  unsafeDescription: It's a Permit to Operate, last renewed 3/11/2023. Today's date
+    is March 14th, 2024.
+  position: {x: 23, y: 2.5, z: 0}
+  isSafe: 1
+  scoreDelta: 1

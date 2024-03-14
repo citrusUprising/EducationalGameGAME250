@@ -75,7 +75,7 @@ SpriteRenderer:
   m_SortingLayerID: 1325135103
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 6761b6d177fec0742b51d44abe6e1b4b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3d82d674b6175104ea830c5eee94e538, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -145,7 +145,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: meatStorage
   safeDescription: This tub in the fridge has raw meat in it.
-  unsafeDescription: This tub in the fridge has raw meat and vegetables together.
+  unsafeDescription: This tub in the fridge has raw and cooked meat together.
   position: {x: -5.8, y: -1.55, z: -1}
-  isSafe: 1
-  scoreDelta: 1
+  isSafe: 0
+  scoreDelta: -1
